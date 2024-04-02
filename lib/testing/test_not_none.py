@@ -1,7 +1,7 @@
-#!/usr/bin/env python3
+from lib.not_none_functions import add_one
 
-from not_none_functions import return_not_none
+def test_add_one():
+    assert add_one(1) == 2
 
-# def test_return_not_none():
-#     '''in not_none_functions, function "return_not_none" returns a value that is not None.'''
-#     assert False
+def test_add_one_with_none():
+    assert add_one(None) is None
